@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light p-3 m-xxl-3 mob">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h3>Siagian.<span class="text-primary">Dev</span></h3></a>
+    
+            <button class="buton mobile-menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon">
+                    <svg viewBox="0 0 175 80" width="40" height="40">
+                        <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    </svg>
+                </span>
+                <span class="text">MENU</span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <div class="dark-mode-toggle">
+                            <input type="checkbox" id="darkModeToggle" class="toggle-checkbox" onchange="toggleDarkMode()">
+                            <label for="darkModeToggle" class="toggle-label">
+                                <i class="fas fa-moon"></i>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Navbar End -->
+      <!-- Section-->
+      <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 mb-5">
+                    <div class="card h-100" id="projectCard">
+                        <!-- Carousel -->
+                        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap1.png" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap2.png" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap3.png" alt="">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap4.png" alt="">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap5.png" alt="">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap6.png" alt="">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap7.png" alt="">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap8.png" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap9.png" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap10.png" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 card-img-top" src="img/project/atap11.png" alt="">
+                                </div>
+                                <!-- You can add more carousel items here -->
+                            </div>
+                            <a class="carousel-control-prev" href="#productCarousel" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-black rounded-circle" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#productCarousel" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-black rounded-circle" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                        <!-- Product details -->
+                        <div class="card-body card-body-custom pt-4">
+                            <div>
+                                <!-- Product name -->
+                                <h3 class="fw-bolder text-primary">Description</h3>
+                                <p>
+                                    Keluarga Satu Atap is an association of several IT Del students from the Information Technology Study Program. on this website presents information, pictures and activities carried out by them                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card">
+                        <!-- Product details-->
+                        <div class="card-body card-body-custom pt-4" id="projectCard">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <h5 class="fw-bolder">Keluarga Satu Atap</h5>
+                                    <div class="rent-price mb-3">
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled list-style-group">
+                                    <li class="border-bottom p-2 d-flex justify-content-between">
+                                        <span>Technology</span>
+                                        <span style="font-weight: 600;">HTML, CSS, JAVASCRIPT</span>
+                                    </li>
+                                    <li class="border-bottom p-2 d-flex justify-content-between">
+                                        <span>Framework</span>
+                                        <span style="font-weight: 600;">Bootstrap (CSS)</span>
+                                    </li>
+                                    <li class="border-bottom p-2 d-flex justify-content-between">
+                                        <span>Code Editor</span>
+                                        <span style="font-weight: 600;">VSCode</span>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio End -->
+
+    <!-- Footer Start -->
+    <footer class="text-center text-white" style="background-color: #000;">
+        <div class="container pt-4">
+            <section class="mb-4">
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=iqbalsiagian2018@gmail.com" target="_blank" role="button"
+                    data-mdb-ripple-color="light"><i class="fab fa-google"></i></a>
+    
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.instagram.com/nyiooss/" target="_blank" role="button"
+                    data-mdb-ripple-color="light"><i class="fab fa-instagram"></i></a>
+    
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.linkedin.com/in/iqbal-siagian" target="_blank" role="button"
+                    data-mdb-ripple-color="light"><i class="fab fa-linkedin"></i></a>
+    
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://github.com/iqbalsiagian17" target="_blank" role="button"
+                    data-mdb-ripple-color="light"><i class="fab fa-github"></i></a>
+            </section>
+        </div>
+        <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-light" href="https://www.instagram.com/nyiooss/">Iqbal Siagian</a>
+        </div>
+    </footer>
+    
+    <!-- Footer End -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

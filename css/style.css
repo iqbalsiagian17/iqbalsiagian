@@ -1,0 +1,493 @@
+
+.box {
+    width: 350px;
+    background: cornflowerblue;
+    border-radius: 80% 30% 50% 50%/50%;
+    animation: animate 2s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      box-shadow: 0 0 0 0 cornflowerblue;
+    }
+    40% {
+      box-shadow: 0 0 0 50px rgba(255, 26, 67, 0);
+    }
+    80% {
+      box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 rgba(255, 206, 67, 0);
+    }
+  }
+
+  @media (max-width: 767px) { /* Ganti dengan ukuran yang sesuai untuk mode mobile */
+    .navbar-nav.text-center {
+        text-align: center;
+    }
+}
+
+/* welcome - about */
+    @media (min-width: 768px) {
+        .container#about {
+            margin-top: 250px; 
+        }
+    }
+
+        /* Untuk mode desktop */
+        @media (min-width: 768px) {
+          .tech-stack-icons {
+              margin: 0 30px;
+              font-size: 40px
+          }
+      }
+  
+      /* Untuk mode mobile */
+      @media (max-width: 767px) {
+          .tech-stack-icons {
+              margin: 0 12px;
+              font-size: 30px
+          }
+      }
+
+      @media (max-width: 767px) {
+        #about .position-relative {
+            padding-top: 0;
+        }
+        #about .position-absolute.top-0 {
+            display: none;
+        }
+    }
+
+
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    .flex-item {
+      margin: 5px; /* Adjust margin as needed */
+    }
+  
+  /* Untuk mode mobile */
+  @media (max-width: 767px) {
+    .flex-item img {
+      width: 100%; /* Adjust the image width as needed */
+    }
+  }
+
+  /* Untuk mode desktop (lebar layar lebih dari 767px) */
+  @media (min-width: 768px) {
+    .flex-item img {
+      width: 75%; /* Adjust the image width as needed */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .single-latest-news {
+    -webkit-box-shadow: 0 0 20px #dddddd;
+    box-shadow: 0 0 20px #dddddd;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .single-latest-news:hover {
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .news-bg-1 {
+    background-image: url(../img/project/atap1.png);
+  }
+  
+  .news-bg-2 {
+    background-image: url(../img/project/rivaldo1.png);
+  }
+  
+  .news-bg-3 {
+    background-image: url(../img/project/balige1.png);
+  }
+
+  
+
+  .latest-news-bg {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    background-color: #ddd;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .single-latest-news h3 {
+    font-size: 20px;
+    line-height: 1.25em;
+    font-weight: 600;
+  }
+  
+  .single-latest-news h3 a {
+    color: #051922;
+  }
+  
+
+  
+.single-latest-news {
+  margin-bottom: 30px;
+}
+
+
+
+
+.news-text-box {
+  padding: 25px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+/* Tombol (Button) Read More */
+.read-more-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid rgb(24, 92, 218);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(24, 92, 218);
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-top: 10px;
+}
+
+.read-more-btn:hover {
+  background-color: rgb(24, 92, 218);
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Animasi Tombol Read More */
+.read-more-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.read-more-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(24, 92, 218);
+  opacity: 0.5;
+  transition: left 0.3s;
+}
+
+.read-more-btn:hover:before {
+  left: 0;
+}
+
+.read-more-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+/*** Contact ***/
+.contact .btn-square {
+  width: 100px;
+  height: 100px;
+  border: 20px solid var(--light);
+  background: var(--primary);
+  border-radius: 50px;
+}
+
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.about-reveal {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.about-reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* New animation styles for portfolio cards */
+
+.dark-mode {
+  background-color: #111;
+  color: #ffffff;
+}
+
+.dark-mode footer {
+  background-color: #111;
+}
+
+/* Styles for the dark mode toggle */
+.dark-mode-toggle {
+  display: inline-block;
+  position: relative;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center; /* Center the icon vertically */
+  justify-content: center; /* Center the icon horizontally */
+  cursor: pointer;
+  user-select: none;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-label:hover {
+  background-color: #f5f5f5;
+}
+
+.fas.fa-moon {
+  font-size: 18px;
+  color: #777;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #f5c542;
+  border-color: #f5c542;
+  color: #fff;
+}
+
+.toggle-checkbox:checked + .toggle-label .fas.fa-moon {
+  color: #fff;
+}
+
+
+
+.buton {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+}
+
+.buton:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.buton .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.buton .text {
+  transform: translateX(55px);
+}
+
+.buton:hover .icon {
+  width: 175px;
+}
+
+.buton:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.buton:focus {
+  outline: none;
+}
+
+.buton:active .icon {
+  transform: scale(0.85);
+}
+
+@media (max-width: 767px) {
+  .buton {
+    background-color: #ffffff; /* Warna latar belakang putih pada mode mobile */
+    color: #000000; /* Warna teks hitam pada mode mobile */
+  }
+
+  .buton:hover {
+    background-color: #f5f5f5; /* Warna latar belakang hover pada mode mobile */
+  }
+}
+
+
+@media (min-width: 768px) {
+  .mobile-menu-button {
+      display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar.mob {
+      color: #090909 !important; /* Warna teks pada mode mobile */
+  }
+
+  .navbar.mob .navbar-nav .nav-link {
+      color: #090909 !important; /* Warna teks pada mode mobile */
+  }
+  
+  /* Dark mode */
+  .dark-mode .navbar.mob {
+      background-color: #000000; /* Warna latar belakang pada mode dark */
+  }
+
+  .dark-mode .navbar.mob .navbar-nav .nav-link {
+      color: #ffffff !important; /* Warna teks pada mode dark */
+  }
+
+  /* Menutup navbar secara otomatis saat tautan di klik */
+  .navbar.mob .navbar-nav .nav-link {
+      cursor: pointer;
+  }
+
+  .navbar.mob .navbar-nav .nav-link:not(.dropdown-toggle) {
+      transition: color 0.3s ease-in-out;
+  }
+
+  .navbar.mob .navbar-toggler {
+      border-color: transparent;
+  }
+
+  .navbar.mob .navbar-toggler:focus, .navbar.mob .navbar-toggler:active {
+      outline: none;
+      box-shadow: none;
+  }
+
+  .navbar.mob .collapse.show {
+      max-height: none;
+      overflow: visible;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Dark mode - desktop */
+  .dark-mode .navbar.mob .navbar-nav .nav-link {
+    color: #ffffff !important; /* Warna teks pada mode gelap desktop */
+  }
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .carousel-control-prev-icon,
+.dark-mode .carousel-control-next-icon {
+  background-color: white;
+}
+
+/* Adjust other styles as needed */
+.dark-mode #projectCard {
+  background-color: #111;
+}
+
+.pin-icon {
+  cursor: pointer;
+  color: #007bff;
+}
+
+/* Gaya untuk tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -35px;
+  left: 25px;
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
